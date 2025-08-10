@@ -1,0 +1,9 @@
+package com.sprk.main;
+
+public class XMLInjectionMain {
+	
+	public static void main(String[] args) {
+		System.out.println("Hello");
+	}
+
+}
