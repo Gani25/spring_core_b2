@@ -1,0 +1,12 @@
+package com.sprk.cars;
+
+public class MG {
+
+	public MG() {
+		System.out.println("I am tata car");
+	}
+	
+	public void showSpecs() {
+		System.out.println("I am Tata Car and I am best in budget");
+	}
+}

@@ -1,0 +1,24 @@
+package com.sprk.main;
+
+import com.sprk.cars.BMW;
+import com.sprk.cars.CarBrand;
+import com.sprk.cars.Tata;
+import com.sprk.showroom.SPRKDealership;
+
+public class DriverClass {
+	
+	public static void main(String[] args) {
+		// Meeting with BMW and closing deals
+		
+		//BMW bmw = new BMW(); // Changing deals to Tata
+//		Tata tata = new Tata();
+		
+		CarBrand carBrand = new BMW();
+		SPRKDealership dealership = new SPRKDealership(carBrand);
+		
+		// SHow Specs
+		dealership.getCarBrand().showSpecs();
+//		dealership.getBmwCars().showSpecs();
+	}
+
+}

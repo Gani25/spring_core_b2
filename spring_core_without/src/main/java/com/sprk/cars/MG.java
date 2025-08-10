@@ -1,0 +1,13 @@
+package com.sprk.cars;
+
+public class MG implements CarBrand {
+
+	public MG() {
+		System.out.println("I am MG car");
+	}
+	
+	@Override
+	public void showSpecs() {
+		System.out.println("I am MG Car and I am best for premium classes");
+	}
+}

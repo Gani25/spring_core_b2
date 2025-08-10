@@ -1,0 +1,33 @@
+package com.sprk.showroom;
+
+import com.sprk.cars.BMW;
+
+public class SPRKDealership {
+	
+	// Car Brand
+	// Aggregation has A
+	
+	private BMW bmwCars; // field
+
+	public SPRKDealership(BMW bmwCars) {
+		System.out.println("Finalizing Dealership with BMW Cars");
+		this.bmwCars = bmwCars;
+	}
+
+	public BMW getBmwCars() {
+		return bmwCars;
+	}
+
+	public void setBmwCars(BMW bmwCars) {
+		this.bmwCars = bmwCars;
+	}
+	
+	
+	
+	
+	
+	
+	
+
+
+}

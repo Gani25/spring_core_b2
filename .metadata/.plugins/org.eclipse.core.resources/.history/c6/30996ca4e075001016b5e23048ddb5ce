@@ -1,0 +1,18 @@
+package com.sprk.main;
+
+import com.sprk.cars.BMW;
+import com.sprk.showroom.SPRKDealership;
+
+public class DriverClass {
+	
+	public static void main(String[] args) {
+		// Meeting with BMW and closing deals
+		
+		BMW bmw = new BMW();
+		SPRKDealership dealership = new SPRKDealership(bmw);
+		
+		// SHow Specs
+		dealership.getBmwCars().showSpecs();
+	}
+
+}

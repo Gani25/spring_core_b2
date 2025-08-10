@@ -1,0 +1,12 @@
+package com.sprk.cars;
+
+public class BMW {
+
+	public BMW() {
+		System.out.println("I am BMW car");
+	}
+	
+	public void showSpecs() {
+		System.out.println("I am BMW Car and I am best for racing and premium sports feel");
+	}
+}

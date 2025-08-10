@@ -1,0 +1,12 @@
+package com.sprk.cars;
+
+public class Tata {
+
+	public Tata() {
+		System.out.println("I am tata car");
+	}
+	
+	public void showSpecifications() {
+		System.out.println("I am Tata Car and I am best in budget");
+	}
+}
