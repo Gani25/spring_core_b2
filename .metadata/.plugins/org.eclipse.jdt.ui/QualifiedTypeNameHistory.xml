@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.sprk.showroom.SPRKDealership"/>
+    <fullyQualifiedTypeName name="com.sprk.cars.Tata"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="com.sprk.cars.CarBrand"/>
+    <fullyQualifiedTypeName name="com.sprk.cars.BMW"/>
+    <fullyQualifiedTypeName name="com.sprk.cars.MG"/>
+    <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+</qualifiedTypeNameHistroy>

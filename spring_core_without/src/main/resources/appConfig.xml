@@ -4,13 +4,18 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean name="tataBean" class="com.sprk.cars.Tata"></bean>
-	<bean name="mgBean" class="com.sprk.cars.MG"></bean>
-	<bean name="bmwBean" class="com.sprk.cars.BMW"></bean>
+	<bean name="tataBean" class="com.sprk.cars.Tata" lazy-init="true"></bean>
+	<bean name="mgBean" class="com.sprk.cars.MG" lazy-init="true"></bean>
+	<bean name="bmwBean" class="com.sprk.cars.BMW" lazy-init="true"></bean>
 	
-	<bean name="dealership" class="com.sprk.showroom.SPRKDealership">
+	<bean name="dealership" class="com.sprk.showroom.SPRKDealership" lazy-init="true">
 		<!-- Constructor Injection -->
-		<constructor-arg name="carBrand" ref="tataBean"></constructor-arg>
+		<constructor-arg name="carBrand" ref="bmwBean"></constructor-arg>
+	</bean>
+	
+	<bean name="dealership_setter" class="com.sprk.showroom.SPRKDealership" >
+		<!-- Setter Injection -> passing arguments to setter params -->
+		<property name="carBrand" ref="tataBean" ></property>
 	</bean>
 	
 	

@@ -1,0 +1,61 @@
+package com.sprk.showroom;
+
+import com.sprk.cars.BMW;
+import com.sprk.cars.CarBrand;
+import com.sprk.cars.Tata;
+
+public class SPRKDealership {
+	
+	// Car Brand
+	// Aggregation has A
+	
+	// private BMW bmwCars; // field
+//	private Tata tataCars;
+	
+	private CarBrand carBrand;
+	
+	public SPRKDealership(CarBrand carBrand) {
+		System.out.println("Finalizing Dealership with "+carBrand.getClass().getSimpleName()+" Cars");
+		this.carBrand = carBrand;
+	}
+
+	public CarBrand getCarBrand() {
+		return carBrand;
+	}
+
+	public void setCarBrand(CarBrand carBrand) {
+		this.carBrand = carBrand;
+	}
+	
+	
+
+//	public Tata getTataCars() {
+//		return tataCars;
+//	}
+//
+//	public void setTataCars(Tata tataCars) {
+//		this.tataCars = tataCars;
+//	}
+
+//	public SPRKDealership(BMW bmwCars) {
+//		System.out.println("Finalizing Dealership with BMW Cars");
+//		this.bmwCars = bmwCars;
+//	}
+//
+//	public BMW getBmwCars() {
+//		return bmwCars;
+//	}
+//
+//	public void setBmwCars(BMW bmwCars) {
+//		this.bmwCars = bmwCars;
+//	}
+	
+	
+	
+	
+	
+	
+	
+
+
+}

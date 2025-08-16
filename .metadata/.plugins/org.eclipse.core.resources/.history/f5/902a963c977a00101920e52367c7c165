@@ -1,0 +1,21 @@
+package com.sprk.main;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.sprk.showroom.SPRKDealership;
+
+public class XMLInjectionMain {
+	
+	public static void main(String[] args) {
+		
+//		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("appConfig.xml");
+		
+		// Load XML In IOC
+		ApplicationContext context = new ClassPathXmlApplicationContext("appConfig.xml");
+//		SPRKDealership dealership = (SPRKDealership) context.getBean("dealership");
+		SPRKDealership dealership = context.getBean("dealership", SPRKDealership.class);
+		dealership.getCarBrand().showSpecs();
+	}
+
+}
