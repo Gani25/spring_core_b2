@@ -1,0 +1,32 @@
+package com.sprk.configurations;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import com.sprk.cars.BMW;
+import com.sprk.cars.MG;
+import com.sprk.cars.Tata;
+import com.sprk.showroom.SPRKDealership;
+
+@Configuration
+public class DemoConfig {
+	
+	@Bean
+	private Tata getTataBean() {
+		return new Tata();
+	}
+	@Bean
+	private BMW getBMWBean() {
+		return new BMW();
+	}
+	@Bean
+	private MG getMGBean() {
+		return new MG();
+	}
+	
+	@Bean(name = "dealershipBean")
+	private SPRKDealership getDealershipBean() {
+		// Constructor Inject
+		return new SPRKDealership(getTataBean());
+	}
+}

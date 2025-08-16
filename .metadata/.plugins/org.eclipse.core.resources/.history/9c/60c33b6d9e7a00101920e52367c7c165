@@ -1,0 +1,15 @@
+package com.sprk.main;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.sprk.configurations.DemoConfig;
+
+public class ClassBasedInjection {
+	public static void main(String[] args) {
+		
+		
+		ApplicationContext context = new AnnotationConfigApplicationContext(DemoConfig.class);
+	}
+
+}
